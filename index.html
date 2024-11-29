@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: #16213e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+
+        .info-box {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background-color: #f8f9fa;
+            padding: 0.8rem;
+            border-radius: 5px;
+            border-left: 3px solid #4CAF50;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .portfolio-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .tech-tag {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .info-box {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>สมชาย เขียนโค้ด</h1>
+        <p>Full Stack Developer | React Specialist | Node.js Engineer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">เกี่ยวกับฉัน</a></li>
+            <li><a href="#skills">ทักษะ</a></li>
+            <li><a href="#projects">โปรเจกต์</a></li>
+            <li><a href="#experience">ประสบการณ์</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>เกี่ยวกับฉัน</h2>
+            <div class="info-box">
+                <img src="/api/placeholder/200/200" alt="โปรไฟล์" class="profile-img">
+                <div class="profile-info">
+                    <h3>สวัสดีครับ 👋</h3>
+                    <p>ผมเป็น Full Stack Developer ที่มีประสบการณ์ 5 ปีในการพัฒนาเว็บแอปพลิเคชัน โดยเฉพาะด้าน React และ Node.js ชอบเรียนรู้เทคโนโลยีใหม่ๆ และแก้ไขปัญหาที่ท้าทาย</p>
+                    <p>ปัจจุบันทำงานในตำแหน่ง Senior Developer ที่บริษัท Tech Solution Thailand และรับงาน Freelance ในเวลาว่าง</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>ทักษะและความเชี่ยวชาญ</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Frontend
+                    <ul>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-item">Backend
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>NestJS</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-item">DevOps
+                    <ul>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>CI/CD</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="skill-item">อื่นๆ
+                    <ul>
+                        <li>Agile/Scrum</li>
+                        <li>REST API</li>
+                        <li>GraphQL</li>
+                        <li>Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>โปรเจกต์ที่น่าสนใจ</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <img src="/api/placeholder/300/180" alt="โปรเจกต์ 1">
+                    <h3>ระบบจัดการร้านอาหาร</h3>
+                    <p>แพลตฟอร์มจัดการร้านอาหารแบบครบวงจร รองรับการจองโต๊ะ สั่งอาหาร และระบบสมาชิก</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="/api/placeholder/300/180" alt="โปรเจกต์ 2">
+                    <h3>แอพติดตามค่าใช้จ่าย</h3>
+                    <p>แอพพลิเคชันบันทึกและวิเคราะห์ค่าใช้จ่ายส่วนบุคคล พร้อมระบบวิเคราะห์และรายงานอัตโนมัติ</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Prisma</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>ประสบการณ์ทำงาน</h2>
+            <div class="portfolio-card">
+                <h3>Senior Developer - Tech Solution Thailand</h3>
+                <p>2021 - ปัจจุบัน</p>
+                <ul>
+                    <li>พัฒนาและดูแลระบบ E-commerce ที่มีผู้ใช้มากกว่า 100,000 คน</li>
+                    <li>นำทีมในการปรับปรุงประสิทธิภาพระบบ ลดเวลาโหลดลง 40%</li>
+                    <li>ออกแบบและพัฒนา Microservices Architecture</li>
+                </ul>
+            </div>
+            <div class="portfolio-card">
+                <h3>Full Stack Developer - Digital Express Co., Ltd.</h3>
+                <p>2019 - 2021</p>
+                <ul>
+                    <li>พัฒนาระบบจัดการภายในองค์กรด้วย React และ Node.js</li>
+                    <li>ดูแลระบบ CI/CD และ Cloud Infrastructure</li>
+                    <li>สอนและแนะนำ Junior Developers</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>ช่องทางการติดต่อ</h2>
+            <p>📧 Email: somchai.code@example.com</p>
+            <p>📱 โทรศัพท์: 081-234-5678</p>
+            <p>💼 LinkedIn: linkedin.com/in/somchaicode</p>
+            <p>🐱 GitHub: github.com/somchaicode</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 สมชาย เขียนโค้ด - Software Developer Portfolio</p>
+    </footer>
+</body>
+</html>
